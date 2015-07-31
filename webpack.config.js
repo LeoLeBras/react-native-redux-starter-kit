@@ -1,26 +1,36 @@
-var fs = require('fs');
-var path = require('path');
-var webpack = require('webpack');
+var fs = require('fs'),
+    path = require('path'),
+    NyanProgressPlugin = require('nyan-progress-webpack-plugin'),
+    webpack = require('webpack');
 
 var config = {
   debug: true,
   devtool: 'source-map',
   entry: {
-    'index.ios': ['./src/index.js'],
+    'index.ios': ['./src/index.jsx'],
   },
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].js',
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', 'jsx'],
+    modulesDirectories: [
+      './node_modules/',
+      './src/modules/',
+      './src/assets/',
+      './src/scripts/',
+      './src/scripts/containers/'
+    ]
   },
   module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loaders: ['babel?stage=0&blacklist=validation.react']},
+      {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel']},
     ],
   },
-  plugins: []
+  plugins: [
+    new NyanProgressPlugin()
+  ]
 };
 
 module.exports = config;

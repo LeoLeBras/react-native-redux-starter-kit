@@ -1,9 +1,18 @@
 {
-  "name": "App",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-native-starter-kit",
+  "version": "0.4.0",
+  "description": "A starter kit for made effective react native mobile app.",
   "scripts": {
     "start": "node node_modules/.bin/react-native-webpack-server start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeoLeBras/react-native-starter-kit.git"
+  },
+  "author": "Léo LE BRAS <leo.lebrasf@gmail.com> (http://github.com/LeoLeBras)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeoLeBras/react-native-starter-kit/issues"
   },
   "dependencies": {
     "react-native": "^0.8.0-rc.2",

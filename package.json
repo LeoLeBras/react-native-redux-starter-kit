@@ -15,6 +15,7 @@
     "url": "https://github.com/LeoLeBras/react-native-starter-kit/issues"
   },
   "dependencies": {
+    "react-constants": "^0.2.2",
     "react-native": "^0.8.0-rc.2",
     "react-redux": "^0.2.2",
     "redux": "^1.0.0-rc",

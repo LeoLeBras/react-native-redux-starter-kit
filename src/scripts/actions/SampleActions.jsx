@@ -1,4 +1,4 @@
-import * as types from 'constants/ActionTypes.jsx';
+import * as types from 'constants/ActionTypes';
 
 export function sample(id){
     return {

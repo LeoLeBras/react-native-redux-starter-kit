@@ -1,1 +1,1 @@
-export { default as samples } from './samples.jsx';
+export { default as samples } from './samples';

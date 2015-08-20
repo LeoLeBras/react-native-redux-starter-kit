@@ -11,7 +11,7 @@ export default class Sample extends React.Component {
   render(){
     return (
       <View>
-        <Text>Hello !</Text>
+        <Text>Hello :)</Text>
       </View>
     );
   }

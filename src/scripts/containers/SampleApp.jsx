@@ -1,8 +1,8 @@
 import React, { Component } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux/native';
-import * as LinkActions from "actions/SampleActions.jsx";
-import Sample from 'Sample/index.jsx';
+import * as LinkActions from "actions/SampleActions";
+import Sample from 'Sample/index';
 
 @connect(state => ({ samples: state.samples }))
 export default class SampleApp extends Component{

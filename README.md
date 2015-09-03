@@ -1,5 +1,5 @@
 # react-native-starter-kit
-A starter kit for bulding effective react native mobile app.
+A starter kit for building native apps using react
 
 ## Requirements
 - Xcode

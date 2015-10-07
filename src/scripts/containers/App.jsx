@@ -1,7 +1,7 @@
 import React, { Component } from 'react-native';
 import { Provider } from 'react-redux/native';
 import { store } from 'configStore';
-import SampleApp from 'SampleApp';
+import HelloWorld from 'HelloWorld/';
 
 export default class App extends React.Component{
 
@@ -14,7 +14,7 @@ export default class App extends React.Component{
         return(
             <Provider store={ store }>
                 {() =>
-                    <SampleApp />
+                    <HelloWorld />
                 }
             </Provider>
         )

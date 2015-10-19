@@ -12,6 +12,8 @@ A starter kit for building native apps using react
 - [Babel](http://babeljs.io/) for ES6+ support
 - [Webpack](https://webpack.github.io/) module loader and bundler
 
+
+
 ## Install
 
 Just [clone](github-windows://openRepo/https://github.com/LeoLeBras/react-native-starter-kit.git) the repo

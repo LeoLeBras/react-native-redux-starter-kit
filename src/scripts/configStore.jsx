@@ -1,6 +1,13 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import promiseMiddleware from './middlewares/promiseMiddleware';
-import * as reducers from './reducers/';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import promiseMiddleware from 'middlewares/promiseMiddleware';
+import * as reducers from 'reducers/';
+import { routerStateReducer } from 'redux-react-router';
 
-const createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(createStore);
-export const store = createStoreWithMiddleware(combineReducers(reducers));
+let cs = createStore;
+if(__DEBUG__){
+    cs = compose(require('redux-devtools').devTools(), createStore);
+}
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(cs);
+export const store = createStoreWithMiddleware(combineReducers({
+    router: routerStateReducer, ...reducers
+}));

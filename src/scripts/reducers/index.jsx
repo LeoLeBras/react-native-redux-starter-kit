@@ -1,1 +1,1 @@
-export { default as samples } from './samples';
+export { samples } from './samples';

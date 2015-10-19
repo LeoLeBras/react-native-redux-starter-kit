@@ -14,8 +14,8 @@ export default class HelloWorld extends Component {
                 <Text style={ styles }>Hello World !</Text>
             </View>
         );
-  }
-  
+   }
+ 
 }
 
 const styles = {

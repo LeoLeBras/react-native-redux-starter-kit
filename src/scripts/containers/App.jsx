@@ -1,9 +1,32 @@
-import React, { Component } from 'react-native';
-import { Provider } from 'react-redux/native';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
 import { store } from 'configStore';
-import HelloWorld from 'HelloWorld/';
+import Router, { Route } from 'react-router';
+import { history } from 'react-router/lib/BrowserHistory';
+import { routes } from 'routes';
+import { reduxRouteComponent } from 'redux-react-router';
 
-export default class App extends React.Component{
+export default class App extends Component{
+
+    /**
+     * Render
+     *
+     * @return JSX
+     */
+    renderDevTools(){
+        if(__DEBUG__){
+            const { DevTools, DebugPanel, LogMonitor } = require('redux-devtools/lib/react');
+
+            return (
+                <DebugPanel top right bottom>
+                    <DevTools store={ store } monitor={LogMonitor} />
+                </DebugPanel>
+            );
+        }
+    }
+
+
 
     /**
      * Render
@@ -11,12 +34,19 @@ export default class App extends React.Component{
      * @return JSX
      */
     render(){
-        return(
-            <Provider store={ store }>
-                {() =>
-                    <HelloWorld />
-                }
-            </Provider>
-        )
+        const RouteComponent = reduxRouteComponent(store);
+
+        return (
+            <div>
+                <Provider store={ store }>
+                    {() =>
+                        <Router history={ history }>
+                            <Route component={ RouteComponent } childRoutes={ routes } />
+                        </Router>
+                    }
+                </Provider>
+                { this.renderDevTools() }
+            </div>
+        );
     }
 }

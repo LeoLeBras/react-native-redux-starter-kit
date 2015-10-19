@@ -1,4 +1,4 @@
-# react-native-starter-kit
+# react-native-redux-starter-kit
 A starter kit for building native apps using react
 
 ## Requirements

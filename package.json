@@ -1,6 +1,6 @@
 {
-  "name": "react-native-starter-kit",
-  "version": "0.7.0",
+  "name": "react-native-redux-starter-kit",
+  "version": "0.7.1",
   "description": "A starter kit for made effective react native mobile app.",
   "scripts": {
     "start": "node node_modules/.bin/react-native-webpack-server start"

@@ -1,62 +1,45 @@
-var fs = require('fs');
-var path = require('path');
-var webpack = require('webpack');
+var fs = require('fs'),
+    path = require('path'),
+    webpack = require('webpack'),
+    NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 
 var config = {
-
-  debug: true,
-
-  devtool: 'source-map',
-
-  entry: {
-    'index.ios': ['./src/index.js'],
-  },
-
-  output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: '[name].js',
-  },
-
-  module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        stage: 0,
-        plugins: []
-      }
-    }]
-  },
-
-  plugins: [],
-
+    debug: true,
+    devtool: 'source-map',
+    entry: {
+        'index.ios': ['./src/index.jsx'],
+    },
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: '[name].js',
+    },
+    module: {
+        loaders: [{
+            test: /\.jsx?$/,
+            exclude: /node_modules/,
+            loader: 'babel'
+        }]
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx'],
+        modulesDirectories: [
+            'node_modules',
+            './src',
+            './src/actions/',
+            './src/components',
+            './src/containers/',
+            './src/reducers/'
+        ]
+    },
+    plugins: [
+        new NyanProgressPlugin()
+    ]
 };
-
-// Hot loader
-if (process.env.HOT) {
-  config.devtool = 'eval'; // Speed up incremental builds
-  config.entry['index.ios'].unshift('react-native-webpack-server/hot/entry');
-  config.entry['index.ios'].unshift('webpack/hot/only-dev-server');
-  config.entry['index.ios'].unshift('webpack-dev-server/client?http://localhost:8082');
-  config.output.publicPath = 'http://localhost:8082/';
-  config.plugins.unshift(new webpack.HotModuleReplacementPlugin());
-  config.module.loaders[0].query.plugins.push('react-transform');
-  config.module.loaders[0].query.extra = {
-    'react-transform': {
-      transforms: [{
-        transform: 'react-transform-hmr',
-        imports: ['react-native'],
-        locals: ['module']
-      }]
-    }
-  };
-}
 
 // Production config
 if (process.env.NODE_ENV === 'production') {
-  config.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
-  config.plugins.push(new webpack.optimize.UglifyJsPlugin());
+    config.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
+    config.plugins.push(new webpack.optimize.UglifyJsPlugin());
 }
 
 module.exports = config;

@@ -1,5 +1,3 @@
 import constants from 'react-constants';
 
-export default constants([
-    'SAMPLE'
-]);
+export default constants([]);

@@ -1,1 +1,1 @@
-export { samples } from './samples';
+export reducer from './bar';

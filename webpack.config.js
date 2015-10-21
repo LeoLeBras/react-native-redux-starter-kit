@@ -3,6 +3,10 @@ var fs = require('fs'),
     webpack = require('webpack'),
     NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 
+var dev = (process.env.NODE_ENV === 'DEV' ? true : false),
+    debug = (process.env.DEBUG === 'true' ? true : false),
+    production = (process.env.NODE_ENV === 'PROD' ? true : false);
+
 var config = {
     debug: true,
     devtool: 'source-map',
@@ -24,15 +28,21 @@ var config = {
         extensions: ['', '.js', '.jsx'],
         modulesDirectories: [
             'node_modules',
-            './src',
-            './src/actions/',
+            './src/',
             './src/components',
-            './src/containers/',
-            './src/reducers/'
+            './src/scripts/',
+            './src/scripts/actions/',
+            './src/scripts/containers/',
+            './src/scripts/reducers/'
         ]
     },
     plugins: [
-        new NyanProgressPlugin()
+        new NyanProgressPlugin(),
+        new webpack.DefinePlugin({
+            __PROD__  : production,
+            __DEV__   : dev,
+            __DEBUG__ : debug
+        })
     ]
 };
 

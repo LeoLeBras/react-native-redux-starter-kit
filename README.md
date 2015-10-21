@@ -1,5 +1,5 @@
 # react-native-redux-starter-kit
-A starter kit for building native apps using react
+A starter kit for building native apps using React and Redux.
 
 ## Requirements
 - Node.js (4.0 or newer)

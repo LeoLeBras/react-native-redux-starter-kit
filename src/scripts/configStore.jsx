@@ -2,12 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import promiseMiddleware from 'middlewares/promiseMiddleware';
 import * as reducers from 'reducers/';
 
-let cs = createStore;
-if(__DEBUG__){
-    cs = compose(require('redux-devtools').devTools())(createStore);
-}
-
-const createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(cs);
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(createStore);
 
 export default function configureStore() {
     const store = createStoreWithMiddleware(combineReducers(reducers));

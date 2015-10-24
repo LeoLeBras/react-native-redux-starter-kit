@@ -12,6 +12,7 @@ var config = {
     devtool: 'source-map',
     entry: {
         'index.ios': ['./src/index.jsx'],
+        'index.android': ['./src/index.jsx']
     },
     output: {
         path: path.resolve(__dirname, 'build'),

@@ -14,7 +14,8 @@ export default class Welcome extends Component {
                     React Native Redux Starter Kit
                 </Text>
                 <Text style={ styles.instructions }>
-                    To get started, edit ./src/components/Foo.jsx
+                    Edit ./src/component/Welcome/index.jsx{'\n'}
+                    to get started.
                 </Text>
                 <Text style={ styles.instructions }>
                     Press Cmd+R to reload,{'\n'}
@@ -41,6 +42,6 @@ var styles = StyleSheet.create({
     instructions: {
         textAlign: 'center',
         color: '#333333',
-        marginBottom: 5
+        marginBottom: 10
     },
 });

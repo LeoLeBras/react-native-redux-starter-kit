@@ -2,7 +2,6 @@ import { Component } from 'react-native';
 import { Provider } from 'react-redux/native';
 import configureStore from 'configStore';
 import Welcome from 'Welcome/';
-const store = configureStore();
 
 export default class App extends Component{
 
@@ -13,7 +12,7 @@ export default class App extends Component{
      */
     render(){
         return (
-            <Provider store={ store }>
+            <Provider store={ configureStore() }>
                 { () => <Welcome /> }
             </Provider>
         );

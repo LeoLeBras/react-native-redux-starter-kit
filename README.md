@@ -10,6 +10,7 @@ A starter kit for building native apps using React and Redux.
 - [Redux](http://rackt.github.io/redux/index.html) a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) for ES6+ support
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript which increase efficiency and simplicity
+- [ExNavigator Slack](https://github.com/exponentjs/ex-navigator) a route-centric navigation built on top of React Native's Navigator    
 - [Webpack](https://webpack.github.io/) module loader and bundler
 
 
@@ -33,6 +34,7 @@ $ npm start                     # or: env DEBUG=true NODE_ENV=DEV react-native-w
 
 This will start a lightweight development server (webpack dev server) with live reloading.
 Then open `App.xcodeproj` in Xcode, build and run the project.
+(support for android coming soon)
 
 ##### How to build for production ?
 

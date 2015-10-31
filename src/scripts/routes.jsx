@@ -1,13 +1,16 @@
-export const routes = {
+const routes = {};
 
-	getHomeRoute() { return {
-		getSceneClass() {
-			return require('Welcome/');
-		},
+/**
+ * Homepage
+ *
+ */
+routes.getHomeRoute = () => ({
+	getSceneClass() {
+		return require('Welcome/');
+	},
+	getTitle() {
+		return 'Welcome';
+	}
+});
 
-		getTitle() {
-			return 'Welcome';
-		}
-	} }
-	
-};
+export default routes;

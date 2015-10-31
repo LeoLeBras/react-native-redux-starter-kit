@@ -1,7 +1,7 @@
 import { Component } from 'react-native';
 import { Provider } from 'react-redux/native';
 import configureStore from 'configStore';
-import { routes } from 'routes';
+import routes from 'routes';
 import ExNavigator from '@exponent/react-native-navigator';
 
 export default class App extends Component{
@@ -9,7 +9,7 @@ export default class App extends Component{
     /**
      * Render
      *
-     * @return {JSX} Render <Provider /> component
+     * @return {jsx} Render <Provider /> component
      */
     render(){
         return (

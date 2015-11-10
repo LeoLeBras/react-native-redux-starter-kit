@@ -1,4 +1,4 @@
 {
     "stage": 0,
-    "blacklist": ["validation.react"] 
+    "blacklist": ["validation.react"]
 }

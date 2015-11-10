@@ -1,6 +1,6 @@
 {
   "name": "react-native-webpack-server",
-  "version": "0.8.0",
+  "version": "0.8.2-rc",
   "description": "A starter kit for building native apps using React and Redux.",
   "scripts": {
     "start": "env DEBUG=true NODE_ENV=DEV react-native-webpack-server start",
@@ -23,8 +23,8 @@
     "immutable": "^3.7.5",
     "nyan-progress-webpack-plugin": "^1.1.3",
     "react-constants": "^0.2.2",
-    "react-native": "^0.13.2",
-    "react-native-webpack-server": "^0.8.0",
+    "react-native": "^0.15.0-rc",
+    "react-native-webpack-server": "^0.8.2-rc",
     "react-redux": "^3.1.0",
     "react-transform-hmr": "^1.0.1",
     "redux": "^3.0.3",

@@ -16,6 +16,14 @@
     "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit/issues"
   },
   "dependencies": {
+    "@exponent/react-native-navigator": "^0.2.6",
+    "immutable": "^3.7.5",
+    "react-constants": "^0.2.2",
+    "react-native": "^0.15.0",
+    "react-redux": "^3.1.0",
+    "redux": "^3.0.4"
+  },
+  "devDependencies": {
     "babel": "^6.2.1",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
@@ -27,13 +35,5 @@
     "react-native-webpack-server": "^0.8.2-rc",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
-  },
-  "devDependencies": {
-    "@exponent/react-native-navigator": "^0.2.6",
-    "immutable": "^3.7.5",
-    "react-constants": "^0.2.2",
-    "react-native": "^0.15.0",
-    "react-redux": "^3.1.0",
-    "redux": "^3.0.4"
   }
 }

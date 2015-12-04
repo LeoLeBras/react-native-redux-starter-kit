@@ -21,7 +21,12 @@ var config = {
     module: {
         loaders: [{
             test: /\.jsx?$/,
-            loader: 'babel'
+            include: path.join(__dirname, 'src'),
+            loader: 'babel',
+            query: {
+                cacheDirectory: true,
+                presets: ['es2015', 'stage-0', 'react']
+            }
         }]
     },
     resolve: {

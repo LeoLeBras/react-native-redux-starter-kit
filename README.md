@@ -5,7 +5,7 @@ Get started with React Native and Redux.
 - Node.js 5.x or newer
 
 ## Stack
-- [React Native](https://facebook.github.io/react-native/) `^0.16.0-rc` for building native apps using react
+- [React Native](https://facebook.github.io/react-native/) `^0.16.x` for building native apps using react
 - [Redux](http://rackt.github.io/redux/index.html) `^3.1.0` a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript

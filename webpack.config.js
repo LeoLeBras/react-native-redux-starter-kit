@@ -1,13 +1,10 @@
-var fs = require('fs'),
-    path = require('path'),
-    webpack = require('webpack'),
-    NyanProgressPlugin = require('nyan-progress-webpack-plugin');
+var path = require('path'),
+    webpack = require('webpack');
 
-var dev = (process.env.NODE_ENV === 'DEV' ? true : false),
-    debug = (process.env.DEBUG === 'true' ? true : false),
-    production = (process.env.NODE_ENV === 'PROD' ? true : false);
+var dev = process.env.NODE_ENV === 'DEV' ? true : false,
+    production = process.env.NODE_ENV === 'PRODUCTION' ? true : false;
 
-var config = {
+module.exports =  {
     debug: true,
     devtool: 'source-map',
     entry: {
@@ -16,12 +13,22 @@ var config = {
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].js',
+        filename: '[name].js'
     },
     module: {
         loaders: [{
             test: /\.jsx?$/,
-            loader: 'babel'
+            include: [
+                path.resolve(__dirname, 'src'),
+                path.resolve(__dirname, 'node_modules/react-native/Libraries/react-native'),
+                path.resolve(__dirname, 'node_modules/react-native-navbar'),
+                path.resolve(__dirname, 'node_modules/@exponent'),
+                path.resolve(__dirname, 'node_modules/react-native-clone-referenced-element')
+            ],
+            loader: 'babel',
+            query: {
+                presets: ['es2015', 'stage-0', 'react']
+            }
         }]
     },
     resolve: {
@@ -37,19 +44,9 @@ var config = {
         ]
     },
     plugins: [
-        new NyanProgressPlugin(),
         new webpack.DefinePlugin({
             __PROD__  : production,
-            __DEV__   : dev,
-            __DEBUG__ : debug
+            __DEV__   : dev
         })
     ]
 };
-
-// Production config
-if (process.env.NODE_ENV === 'production') {
-    config.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
-    config.plugins.push(new webpack.optimize.UglifyJsPlugin());
-}
-
-module.exports = config;

@@ -5,11 +5,11 @@ const routes = {};
  *
  */
 routes.getHomeRoute = () => ({
-	getSceneClass() {
-		return require('Welcome/');
-	},
-	getTitle() {
-		return 'Welcome';
+    getSceneClass() {
+        return require('Welcome/').default;
+    },
+    getTitle() {
+        return 'Welcome';
 	}
 });
 

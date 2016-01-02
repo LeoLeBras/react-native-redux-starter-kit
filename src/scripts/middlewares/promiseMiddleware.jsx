@@ -1,7 +1,7 @@
 /**
  * Promise middleware
  *
- * @return promise
+ * @return {promise}
  */
 export default function promiseMiddleware(){
     return (next) => (action) => {

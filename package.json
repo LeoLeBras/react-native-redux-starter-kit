@@ -1,11 +1,7 @@
 {
   "name": "react-native-webpack-server",
-  "version": "0.8.2-rc",
-  "description": "A starter kit for building native apps using React and Redux.",
-  "scripts": {
-    "start": "env DEBUG=true NODE_ENV=DEV rnws start",
-    "build": "env BABEL_ENV=production NODE_ENV=PROD rnws bundle"
-  },
+  "version": "0.8.4",
+  "description": "Get started with React Native and Redux.",
   "repository": {
     "type": "git",
     "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit"
@@ -15,24 +11,35 @@
   "bugs": {
     "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit/issues"
   },
+  "scripts": {
+    "android-setup-port": "adb reverse tcp:8081 tcp:8080",
+    "start": "env DEBUG=true NODE_ENV=DEV rnws start",
+    "bundle": "env DEBUG=true NODE_ENV=PRODUCTION rnws bundle",
+    "test": "eslint src"
+  },
+  "engines": {
+    "node": ">=4",
+    "npm": ">=2 <4"
+  },
   "dependencies": {
-    "@exponent/react-native-navigator": "^0.2.6",
+    "@exponent/react-native-navigator": "^0.3.5",
     "immutable": "^3.7.5",
     "react-constants": "^0.2.2",
-    "react-native": "^0.16.0",
+    "react-native": "^0.17.0",
     "react-redux": "^3.1.0",
     "redux": "^3.0.4"
   },
   "devDependencies": {
-    "babel": "^6.2.1",
-    "babel-core": "^6.2.1",
+    "babel-core": "^6.3.17",
+    "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
-    "babel-preset-stage-0": "^6.1.18",
-    "nyan-progress-webpack-plugin": "^1.1.3",
-    "react-native": "^0.16.0-rc",
-    "react-native-webpack-server": "^0.8.2-rc",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-loader": "^1.1.1",
+    "eslint-plugin-react": "^3.11.2",
+    "react-native-webpack-server": "^0.8.3",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   }

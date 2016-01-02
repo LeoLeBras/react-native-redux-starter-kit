@@ -6,7 +6,7 @@ const routes = {};
  */
 routes.getHomeRoute = () => ({
 	getSceneClass() {
-		return require('Welcome/');
+		return require('Welcome/').default;
 	},
 	getTitle() {
 		return 'Welcome';

@@ -38,7 +38,7 @@
    * Load from pre-bundled file on disk. To re-generate the static bundle
    * from the root of your project directory, run
    *
-   * $ react-native bundle --minify
+   * $ curl 'http://localhost:8080/index.ios.bundle?dev=false&minify=true' -o ios/main.jsbundle
    *
    * see http://facebook.github.io/react-native/docs/runningondevice.html
    */
@@ -51,7 +51,7 @@
                                                    launchOptions:launchOptions];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *rootViewController = [[UIViewController alloc] init];
+  UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];

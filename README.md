@@ -22,18 +22,24 @@ $ cd myAwesomeApp
 $ npm i                         # Install Node.js components listed in ./package.json
 ```
 
-##### How to use ?
+### How to use ?
 ```shell
-$ npm start                     # or: env DEBUG=true NODE_ENV=DEV react-native-webpack-server start
+$ npm start                     # or: env NODE_ENV=DEV react-native-webpack-server start
 ```
+This will start a lightweight development server (webpack dev server).
 
-This will start a lightweight development server (webpack dev server) with live reloading.
-Then open `App.xcodeproj` in Xcode, build and run the project.
-(support for android coming soon)
+#### iOS
+Open `App.xcodeproj` in Xcode, build and run the project.
 
-##### How to build for production ?
+#### Android
 ```shell
-$ npm run build                # or: env BABEL_ENV=production NODE_ENV=PROD react-native-webpack-server bundle
+$ npm run android-setup-port    # adb reverse tcp:8081 tcp:8080
+```
+Start your emulator or connect your device.
+
+### Bundling for release
+```shell
+$ npm run build                # or: env NODE_ENV=PRODUCTION react-native-webpack-server bundle
 ```
 
 ## Issues

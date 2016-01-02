@@ -2,19 +2,18 @@ var path = require('path'),
     webpack = require('webpack');
 
 var dev = process.env.NODE_ENV === 'DEV' ? true : false,
-    debug = process.env.DEBUG === 'true' ? true : false,
-    production = process.env.NODE_ENV === 'PROD' ? true : false;
+    production = process.env.NODE_ENV === 'PRODUCTION' ? true : false;
 
-module.exports = {
+module.exports =  {
     debug: true,
     devtool: 'source-map',
     entry: {
         'index.ios': ['./src/index.jsx'],
-        'index.android': ['./src/index.jsx'],
+        'index.android': ['./src/index.jsx']
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].js',
+        filename: '[name].js'
     },
     module: {
         loaders: [{
@@ -28,8 +27,8 @@ module.exports = {
             ],
             loader: 'babel',
             query: {
-                presets: ['es2015', 'stage-0', 'react'],
-            },
+                presets: ['es2015', 'stage-0', 'react']
+            }
         }]
     },
     resolve: {
@@ -47,8 +46,7 @@ module.exports = {
     plugins: [
         new webpack.DefinePlugin({
             __PROD__  : production,
-            __DEV__   : dev,
-            __DEBUG__ : debug
+            __DEV__   : dev
         })
     ]
 };

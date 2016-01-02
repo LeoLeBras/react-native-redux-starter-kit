@@ -13,8 +13,8 @@
   },
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
-    "start": "env DEBUG=true NODE_ENV=DEV rnws start",
-    "bundle": "env DEBUG=true NODE_ENV=PRODUCTION rnws bundle",
+    "start": "env NODE_ENV=DEV rnws start",
+    "bundle": "env NODE_ENV=PRODUCTION rnws bundle",
     "test": "eslint src"
   },
   "engines": {

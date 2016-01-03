@@ -29,12 +29,12 @@ $ npm i                         # Install Node.js components listed in ./package
 ```shell
 $ npm start                     # or: env NODE_ENV=DEV rnws start
 ```
-This will start a lightweight development server (webpack dev server).
+This will start a lightweight development server.
 
-#### iOS
+###### iOS:
 Open `App.xcodeproj` in Xcode, build and run the project.
 
-#### Android
+###### Android:
 ```shell
 $ npm run android-setup-port    # adb reverse tcp:8081 tcp:8080
 ```

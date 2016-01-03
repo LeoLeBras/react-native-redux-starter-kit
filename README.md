@@ -27,7 +27,7 @@ $ npm i                         # Install Node.js components listed in ./package
 
 ### How to use ?
 ```shell
-$ npm start                     # or: env NODE_ENV=DEV react-native-webpack-server start
+$ npm start                     # or: env NODE_ENV=DEV rnws start
 ```
 This will start a lightweight development server (webpack dev server).
 
@@ -42,7 +42,7 @@ Start your emulator or connect your device.
 
 ### Bundling for release
 ```shell
-$ npm run build                # or: env NODE_ENV=PRODUCTION react-native-webpack-server bundle
+$ npm run build                # or: env NODE_ENV=PRODUCTION rnws bundle
 ```
 
 ## Issues

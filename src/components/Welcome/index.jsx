@@ -1,31 +1,20 @@
-import React, { Component, Text, View, StyleSheet } from 'react-native';
+import React, { Text, View, StyleSheet } from 'react-native';
 
-export default class Welcome extends Component {
-
-    /**
-     * Render
-     *
-     * @return {jsx}
-     */
-    render() {
-        return (
-            <View style={ styles.container }>
-                <Text style={ styles.welcome }>
-                    React Native Redux Starter Kit
-                </Text>
-                <Text style={ styles.instructions }>
-                    Edit ./src/component/Welcome/index.jsx{'\n'}
-                    to get started.
-                </Text>
-                <Text style={ styles.instructions }>
-                    Press Cmd+R to reload,{'\n'}
-                    Cmd+D or shake for dev menu
-                </Text>
-            </View>
-        );
-    }
-
-}
+const Welcome = () => (
+    <View style={ styles.container }>
+        <Text style={ styles.welcome }>
+            React Native Redux Starter Kit
+        </Text>
+        <Text style={ styles.instructions }>
+            Edit ./src/component/Welcome/index.jsx{'\n'}
+            to get started.
+        </Text>
+        <Text style={ styles.instructions }>
+            Press Cmd+R to reload,{'\n'}
+            Cmd+D or shake for dev menu
+        </Text>
+    </View>
+);
 
 const styles = StyleSheet.create({
     container: {
@@ -42,5 +31,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#333333',
         marginBottom: 10
-    },
+    }
 });
+
+export default Welcome;

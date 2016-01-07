@@ -1,7 +1,7 @@
 import * as types from 'constants/ActionTypes';
 
-export function example() {
+export function bar() {
     return {
-        type: types.EXAMPLE
+        type: types.BAR
     };
 }

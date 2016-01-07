@@ -1,11 +1,11 @@
 import Immutable from 'immutable';
-import { EXAMPLE } from 'constants/ActionTypes';
+import { BAR } from 'constants/ActionTypes';
 
 const initialState = Immutable.fromJS({});
 
 export default function bar(state = initialState, action) {
     switch(action.type) {
-        case EXAMPLE:
+        case BAR:
             state = state;
             break;
     }

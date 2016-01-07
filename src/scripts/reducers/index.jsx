@@ -1,1 +1,1 @@
-export reducer from './bar';
+export bar from './bar';

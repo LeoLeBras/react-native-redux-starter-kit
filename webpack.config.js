@@ -1,5 +1,6 @@
 var path = require('path'),
-    webpack = require('webpack');
+    webpack = require('webpack'),
+    Clean = require('clean-webpack-plugin');
 
 var dev = process.env.NODE_ENV === 'DEV' ? true : false,
     production = process.env.NODE_ENV === 'PRODUCTION' ? true : false;
@@ -12,7 +13,7 @@ module.exports =  {
         'index.android': ['./src/index.jsx']
     },
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, '__build__'),
         filename: '[name].js'
     },
     module: {
@@ -48,5 +49,8 @@ module.exports =  {
             __PROD__  : production,
             __DEV__   : dev
         })
-    ]
+    ].concat(production ? [
+        new webpack.optimize.UglifyJsPlugin(),
+        new Clean(['__build__'])
+    ] : [])
 };

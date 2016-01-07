@@ -1,3 +1,1 @@
-import constants from 'react-constants';
-
-export default constants([]);
+export const EXAMPLE = 'EXAMPLE';

@@ -15,7 +15,9 @@
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "start": "env NODE_ENV=DEV rnws start",
     "build": "env NODE_ENV=PRODUCTION rnws bundle",
-    "test": "eslint src"
+    "test": "eslint src",
+    "debugger-replace": "remotedev-debugger-replace --hostname localhost --port 5678",
+    "remotedev": "npm run debugger-replace && remotedev --hostname localhost --port 5678"
   },
   "engines": {
     "node": ">=4",
@@ -41,6 +43,8 @@
     "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.11.2",
     "react-native-webpack-server": "^0.8.3",
+    "remote-redux-devtools": "0.0.8",
+    "remote-redux-devtools-on-debugger": "^0.1.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   }

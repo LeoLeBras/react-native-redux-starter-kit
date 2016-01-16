@@ -40,6 +40,14 @@ $ npm run android-setup-port    # adb reverse tcp:8081 tcp:8080
 ```
 Start your emulator or connect your device.
 
+### Redux DevTools (iOS)
+```Cmd+D``` from within the Simulator.
+Select ```Debug in Chrome``` from the developer menu.
+Then :
+```shell
+$ npm run remotedev
+```
+
 ### Bundling for release
 ```shell
 $ npm run build                # or: env NODE_ENV=PRODUCTION rnws bundle

@@ -25,6 +25,7 @@ $ git clone https://github.com/LeoLeBras/react-native-redux-starter-kit.git myAw
 $ cd myAwesomeApp
 $ npm i                         # Install Node.js components listed in ./package.json
 ```
+And see [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 
 ### How to use ?
 ```shell

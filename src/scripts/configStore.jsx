@@ -9,6 +9,7 @@ const createStoreWithMiddleware = compose(
         hostname: 'localhost',
         port: 5678,
         autoReconnect: true
+    })
 )(createStore);
 
 export default function configureStore() {

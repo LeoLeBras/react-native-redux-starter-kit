@@ -26,7 +26,7 @@
   "dependencies": {
     "@exponent/react-native-navigator": "^0.3.5",
     "immutable": "^3.7.5",
-    "react-native": "^0.18.0-rc",
+    "react-native": "^0.18.0",
     "react-redux": "^4.0.6",
     "redux": "^3.0.4",
     "redux-thunk": "^1.0.3"

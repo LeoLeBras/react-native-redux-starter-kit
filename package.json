@@ -1,6 +1,6 @@
 {
   "name": "react-native-redux-starter-kit",
-  "version": "1.0.0-rc",
+  "version": "1.0.0",
   "description": "Get started with React Native and Redux.",
   "repository": {
     "type": "git",

@@ -24,7 +24,7 @@ module.exports =  {
                 path.resolve(__dirname, 'node_modules/react-native/Libraries/react-native'),
                 path.resolve(__dirname, 'node_modules/react-native-navbar'),
                 path.resolve(__dirname, 'node_modules/@exponent'),
-                path.resolve(__dirname, 'node_modules/react-native-clone-referenced-element')
+                path.resolve(__dirname, 'node_modules/react-clone-referenced-element')
             ],
             loader: 'babel',
             query: {

@@ -45,7 +45,8 @@ Start your emulator or connect your device.
 ### Redux DevTools
 ###### iOS:
 First, update your configStore():
-```diff
+
+```diff
 + import devTools from 'remote-redux-devtools';
 
 const createStoreWithMiddleware = compose(

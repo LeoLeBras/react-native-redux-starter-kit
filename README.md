@@ -44,6 +44,24 @@ Start your emulator or connect your device.
 
 ### Redux DevTools
 ###### iOS:
+First, update your configStore():
+````
++ import devTools from 'remote-redux-devtools';
+
+const createStoreWithMiddleware = compose(
+-    applyMiddleware(thunk)
++    applyMiddleware(thunk),
++    devTools({
++        hostname: 'localhost',
++        port: 5678,
++        autoReconnect: true
+-    )
++    })
+)(createStore);
+```
+
+
+
 ```Cmd+D``` from within the Simulator, select ```Debug in Chrome``` from the developer menu and :
 ```shell
 $ npm run remotedev

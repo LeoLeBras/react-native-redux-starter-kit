@@ -49,15 +49,15 @@ Update ```src/scripts/configStore.jsx```:
 ```diff
 + import devTools from 'remote-redux-devtools';
 
-const createStoreWithMiddleware = compose(
--    applyMiddleware(thunk)
-+    applyMiddleware(thunk),
-+    devTools({
-+        hostname: 'localhost',
-+        port: 5678,
-+        autoReconnect: true
-+    })
-)(createStore);
++ if(__DEV__) {
++     cs = compose(
++         devTools({
++             name: 'Redux DevTools',
++             hostname: 'localhost',
++             port: 5678
++         })
++     )(createStore);
++ }
 ```
 
 

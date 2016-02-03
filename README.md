@@ -5,7 +5,11 @@
 Get started with React Native and Redux.
 
 ## Requirements
-- Node.js 4.x or newer
+- [Node](https://nodejs.org) 4.x or newer
+- [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
+- [Xcode](https://developer.apple.com/xcode/) for iOS development (optional)
+- [Android SDK](https://developer.android.com/sdk/) for Android development (optional)
+- [Android Lollipop](https://www.android.com/versions/lollipop-5-0/) or better for Android device testing (optional)
 
 ## Stack
 - [React Native](https://facebook.github.io/react-native/) `^0.19.0` for building native apps using react

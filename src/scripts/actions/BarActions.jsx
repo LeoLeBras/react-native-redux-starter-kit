@@ -1,7 +1,11 @@
-import * as types from '../constants/ActionTypes';
+import generateActionTypes from '../utils/generateActionTypes';
+
+export const actionTypes = generateActionTypes(
+    'BAR'
+);
 
 export function bar() {
     return {
-        type: types.BAR
+        type: actionTypes.BAR
     };
 }

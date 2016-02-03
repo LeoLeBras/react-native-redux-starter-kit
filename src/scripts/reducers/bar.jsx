@@ -1,7 +1,8 @@
 import Immutable from 'immutable';
-import { BAR } from '../constants/ActionTypes';
-
 const initialState = Immutable.fromJS({});
+
+import { actionTypes } from '../actions/BarActions';
+const { BAR } = actionTypes;
 
 export default function bar(state = initialState, action) {
     switch(action.type) {

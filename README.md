@@ -8,14 +8,12 @@ Get started with React Native and Redux.
 - Node.js 4.x or newer
 
 ## Stack
-- [React Native](https://facebook.github.io/react-native/) `^0.18.0` for building native apps using react
-- [Redux](http://rackt.github.io/redux/index.html) `4.0.x` a predictable state container for Javascript apps
+- [React Native](https://facebook.github.io/react-native/) `^0.19.0` for building native apps using react
+- [Redux](http://rackt.github.io/redux/index.html) `4.2.x` a predictable state container for Javascript apps
 - [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) use Redux DevTools remotely for React Native apps.
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript
 - [ExNavigator](https://github.com/exponentjs/ex-navigator) a route-centric navigation built on top of React Native's Navigator    
-- [Webpack](https://webpack.github.io/) module loader and bundler
-
 
 ## Getting started
 Just [clone](github-windows://openRepo/https://github.com/LeoLeBras/react-native-redux-starter-kit.git) the repo

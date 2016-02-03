@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
-    "build": "env NODE_ENV=PRODUCTION rnws bundle",
+    "build": "react-native bundle",
     "test": "eslint src",
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "debugger-replace": "remotedev-debugger-replace --hostname localhost --port 5678",

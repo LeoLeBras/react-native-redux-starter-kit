@@ -71,7 +71,7 @@ $ npm run remotedev
 
 ### Bundling for release
 ```shell
-$ npm run build                # or: env NODE_ENV=PRODUCTION rnws bundle
+$ npm run build                # or: react-native bundle
 ```
 
 ## Issues

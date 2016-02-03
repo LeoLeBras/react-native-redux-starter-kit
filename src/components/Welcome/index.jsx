@@ -1,4 +1,4 @@
-import React, { Text, View, StyleSheet } from 'react-native';
+import React, { View, Text } from 'react-native';
 
 const Welcome = () => (
     <View style={ styles.container }>
@@ -16,7 +16,7 @@ const Welcome = () => (
     </View>
 );
 
-const styles = StyleSheet.create({
+const styles = {
     container: {
         flex: 1,
         justifyContent: 'center',
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
         color: '#333333',
         marginBottom: 10
     }
-});
+};
 
 export default Welcome;

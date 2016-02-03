@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import * as reducers from 'reducers/';
+import * as reducers from './reducers/';
 
 let cs = createStore;
 // Remote Redux DevTools

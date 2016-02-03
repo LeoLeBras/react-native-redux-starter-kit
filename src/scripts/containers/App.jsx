@@ -1,8 +1,8 @@
 import React, { Component } from 'react-native';
 import { Provider } from 'react-redux';
-import configureStore from 'configStore';
 import ExNavigator from '@exponent/react-native-navigator';
-import routes from 'routes';
+import configureStore from '../configStore';
+import routes from '../routes';
 
 export default class App extends Component{
 

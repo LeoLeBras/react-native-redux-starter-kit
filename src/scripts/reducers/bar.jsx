@@ -1,5 +1,5 @@
 import Immutable from 'immutable';
-import { BAR } from 'constants/ActionTypes';
+import { BAR } from '../constants/ActionTypes';
 
 const initialState = Immutable.fromJS({});
 

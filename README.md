@@ -31,7 +31,7 @@ And see [Getting Started](https://facebook.github.io/react-native/docs/getting-s
 
 ### How to use ?
 ```shell
-$ npm start                     # or: env NODE_ENV=DEV rnws start
+$ npm start                     # or: node_modules/react-native/packager/packager.sh
 ```
 This will start a lightweight development server.
 

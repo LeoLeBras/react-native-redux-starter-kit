@@ -1,23 +1,22 @@
+import { Platform } from 'react-native';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+// import devTools from 'remote-redux-devtools';
 import thunk from 'redux-thunk';
 import * as reducers from './reducers/';
 
-let cs = createStore;
-// Remote Redux DevTools
-// if(__DEV__) {
-//     cs = compose(
-//         devTools({
-//             name: 'Redux DevTools',
-//             hostname: 'localhost',
-//             port: 5678
-//         })
-//     )(createStore);
-// }
-
-const createStoreWithMiddleware = compose(
+const enhancer = compose(
+    // devTools({
+    //     name: Platform.OS,
+    //     hostname: 'localhost',
+    //     port: 5678
+    // }),
     applyMiddleware(thunk)
-)(cs);
+);
 
-export default function configureStore() {
-    return createStoreWithMiddleware(combineReducers(reducers));
+export default function configureStore(initialState) {
+    return createStore(
+        combineReducers({ ...reducers }),
+        initialState,
+        enhancer
+    );
 }

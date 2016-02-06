@@ -16,8 +16,7 @@
     "build": "react-native bundle",
     "test": "eslint src",
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
-    "debugger-replace": "remotedev-debugger-replace --hostname localhost --port 5678",
-    "remotedev": "npm run debugger-replace && remotedev --hostname localhost --port 5678"
+    "remotedev": "remotedev-debugger --hostname localhost --port 5678 --runserver"
   },
   "engines": {
     "node": ">=4",
@@ -27,8 +26,8 @@
     "@exponent/react-native-navigator": "^0.4.1",
     "immutable": "^3.7.5",
     "react-native": "^0.19.0",
-    "react-redux": "^4.2.1",
-    "redux": "^3.2.1",
+    "react-redux": "^4.4.0",
+    "redux": "^3.3.0",
     "redux-thunk": "^1.0.3"
   },
   "devDependencies": {
@@ -41,8 +40,8 @@
     "eslint": "^1.10.3",
     "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.11.2",
-    "remote-redux-devtools": "^0.1.0",
-    "remote-redux-devtools-on-debugger": "^0.2.0",
+    "remote-redux-devtools": "^0.1.1",
+    "remote-redux-devtools-on-debugger": "^0.2.4",
     "remotedev-server": "0.0.1"
   }
 }

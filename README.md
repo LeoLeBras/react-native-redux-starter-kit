@@ -51,15 +51,14 @@ Update ```src/scripts/configStore.jsx```:
 ```diff
 + import devTools from 'remote-redux-devtools';
 
-+ if(__DEV__) {
-+     cs = compose(
-+         devTools({
-+             name: 'Redux DevTools',
-+             hostname: 'localhost',
-+             port: 5678
-+         })
-+     )(createStore);
-+ }
+const enhancer = compose(
++    devTools({
++        name: Platform.OS,
++        hostname: 'localhost',
++        port: 5678
++    }),
+    applyMiddleware(thunk)
+);
 ```
 
 

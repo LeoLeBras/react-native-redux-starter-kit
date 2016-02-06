@@ -8,7 +8,7 @@
 export default function generateActionTypes(...constants) {
     let actionTypes = {};
 
-    constants.forEach((constant, i) => {
+    constants.forEach(constant => {
         actionTypes = {
             ...actionTypes,
             [constant]: constant

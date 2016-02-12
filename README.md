@@ -52,12 +52,13 @@ Update ```src/scripts/configStore.jsx```:
 + import devTools from 'remote-redux-devtools';
 
 const enhancer = compose(
+-    applyMiddleware(thunk)
++    applyMiddleware(thunk),
 +    devTools({
 +        name: Platform.OS,
 +        hostname: 'localhost',
 +        port: 5678
-+    }),
-    applyMiddleware(thunk)
++    })
 );
 ```
 

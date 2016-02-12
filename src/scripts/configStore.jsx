@@ -5,12 +5,12 @@ import thunk from 'redux-thunk';
 import * as reducers from './reducers/';
 
 const enhancer = compose(
+    applyMiddleware(thunk)
     // devTools({
     //     name: Platform.OS,
     //     hostname: 'localhost',
     //     port: 5678
-    // }),
-    applyMiddleware(thunk)
+    // })
 );
 
 export default function configureStore(initialState) {

@@ -32,14 +32,8 @@
   },
   "devDependencies": {
     "babel-core": "^6.3.17",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "babel-preset-react-native-hmre": "^1.0.0",
+    "babel-preset-react-native": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
-    "babel-resolver": "0.0.18",
-    "eslint": "^1.10.3",
-    "eslint-loader": "^1.1.1",
-    "eslint-plugin-react": "^3.11.2",
     "remote-redux-devtools": "^0.1.1",
     "remote-redux-devtools-on-debugger": "^0.2.4",
     "remotedev-server": "0.0.1"

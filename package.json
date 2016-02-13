@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.3.17",
-    "babel-preset-react-native": "^6.3.13",
+    "babel-preset-react-native": "^1.4.0",
     "babel-preset-stage-0": "^6.3.13",
     "remote-redux-devtools": "^0.1.1",
     "remote-redux-devtools-on-debugger": "^0.2.4",

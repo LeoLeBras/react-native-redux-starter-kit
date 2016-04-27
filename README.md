@@ -56,5 +56,20 @@ $ npm run reactotron
 
 See the [Reacotron docs](https://github.com/skellock/reactotron) for more features.
 
+## Create a release build :
+* Navigate to Product > Scheme > Edit Scheme... in Xcode and change Build Configuration to *Release*.
+* Run in terminal :
+###### iOS:
+```shell
+$ react-native bundle --entry-file index.ios.js --bundle-output ios/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache
+```
+###### Android:
+```shell
+$ react-native bundle --entry-file index.android.js --bundle-output android/main.jsbundle --platform 'andoird' --assets-dest ./  --dev false --reset-cache
+```
+
+* Open ios/Wino/AppDelegate.m, comment line 34 and uncomment line 44.
+* Press "Build and run" and :boom: !
+
 ## Issues
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.

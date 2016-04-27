@@ -6,7 +6,7 @@ routes.getHomeRoute = () => ({
   },
   getTitle() {
     return 'Welcome';
-	}
+  },
 });
 
 export default routes;

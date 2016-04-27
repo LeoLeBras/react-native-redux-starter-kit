@@ -1,12 +1,11 @@
-const routes = {};
+import React from 'react';
+import Welcome from '@components/Welcome';
+import { Actions, Scene } from 'react-native-router-flux';
 
-routes.getHomeRoute = () => ({
-  getSceneClass() {
-    return require('@components/Welcome/').default;
-  },
-  getTitle() {
-    return 'Welcome';
-  },
-});
+const routes = Actions.create(
+  <Scene key="root">
+    <Scene key="welcome" component={Welcome} title="Welcome" />
+  </Scene>
+);
 
 export default routes;

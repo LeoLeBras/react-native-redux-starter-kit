@@ -16,19 +16,17 @@
     "build-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --bundle-output iOS/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache",
     "build-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --bundle-output iOS/main.jsbundle --platform 'android' --assets-dest ./  --dev false --reset-cache",
     "reactotron": "node_modules/.bin/reactotron",
-    "test": "eslint src",
-    "android-setup-port": "adb reverse tcp:8081 tcp:8080",
-    "remotedev": "remotedev-debugger --hostname localhost --port 5678 --runserver"
+    "android-setup-port": "adb reverse tcp:8081 tcp:8080"
   },
   "engines": {
     "node": ">=4",
     "npm": ">=2 <4"
   },
   "dependencies": {
-    "@exponent/react-native-navigator": "^0.4.3",
     "immutable": "^3.8.1",
     "react": "^0.14.7",
     "react-native": "^0.24.1",
+    "react-native-router-flux": "^3.22.22",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-thunk": "^2.0.1"

@@ -62,11 +62,11 @@ See the [Reacotron docs](https://github.com/skellock/reactotron) for more featur
 
 ###### iOS:
 ```shell
-$ react-native bundle --entry-file index.ios.js --bundle-output ios/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache
+$ npm run build-ios
 ```
 ###### Android:
 ```shell
-$ react-native bundle --entry-file index.android.js --bundle-output android/main.jsbundle --platform 'andoird' --assets-dest ./  --dev false --reset-cache
+$ npm run build-android
 ```
 
 * Open ios/Wino/AppDelegate.m, comment line 34 and uncomment line 44.

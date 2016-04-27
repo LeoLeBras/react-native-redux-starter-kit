@@ -13,7 +13,8 @@
   },
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
-    "build": "react-native bundle",
+    "build-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --bundle-output iOS/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache",
+    "build-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --bundle-output iOS/main.jsbundle --platform 'android' --assets-dest ./  --dev false --reset-cache",
     "reactotron": "node_modules/.bin/reactotron",
     "test": "eslint src",
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",

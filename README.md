@@ -59,6 +59,7 @@ See the [Reacotron docs](https://github.com/skellock/reactotron) for more featur
 ## Create a release build :
 * Navigate to Product > Scheme > Edit Scheme... in Xcode and change Build Configuration to *Release*.
 * Run in terminal :
+
 ###### iOS:
 ```shell
 $ react-native bundle --entry-file index.ios.js --bundle-output ios/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache

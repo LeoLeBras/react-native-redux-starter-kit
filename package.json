@@ -14,6 +14,7 @@
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
     "build": "react-native bundle",
+    "reactotron": "node_modules/.bin/reactotron",
     "test": "eslint src",
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "remotedev": "remotedev-debugger --hostname localhost --port 5678 --runserver"
@@ -38,6 +39,7 @@
     "eslint-config-airbnb": "^8.0.0",
     "eslint-plugin-import": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^1.0.3",
-    "eslint-plugin-react": "^5.0.1"
+    "eslint-plugin-react": "^5.0.1",
+    "reactotron": "^0.6.1"
   }
 }

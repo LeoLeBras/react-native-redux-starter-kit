@@ -20,7 +20,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript
 - [ExNavigator](https://github.com/exponentjs/ex-navigator) a route-centric navigation built on top of React Native's Navigator    
 
-## Getting started
+## Make the awesome
 Just clone the repo
 and start :
 ```shell
@@ -28,7 +28,6 @@ $ git clone https://github.com/LeoLeBras/react-native-redux-starter-kit.git myAw
 $ cd myAwesomeApp
 $ npm i                         # Install Node.js components listed in ./package.json
 ```
-
 
 ### How to use ?
 ```shell
@@ -44,6 +43,15 @@ Open `App.xcodeproj` in Xcode, build and run the project.
 $ npm run android-setup-port    # adb reverse tcp:8081 tcp:8080
 ```
 Start your emulator or connect your device.
+
+## Debugging
+[Access the in-app developer menu](https://facebook.github.io/react-native/docs/debugging.html) and select ``Debug in Chrome``.
+
+#### Run Reactotron
+```shell
+$ npm run reactotron
+```
+[Reacotron docs](https://github.com/skellock/reactotron)
 
 ## Issues
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.

@@ -1,4 +1,10 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb"
+  "extends": "airbnb",
+  "rules": {
+    "import/no-unresolved": 0
+  },
+  "globals": {
+    "__DEV__": true
+  }
 }

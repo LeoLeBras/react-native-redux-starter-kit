@@ -6,14 +6,16 @@ A starter boilerplate for a mobile app using React Native and Redux.
 
 ## Requirements
 - [Node](https://nodejs.org) `4.x` or newer
-- [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development (`react-native-cli`)
+- [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
 - [Xcode](https://developer.apple.com/xcode/) for iOS development
 - [Android SDK](https://developer.android.com/sdk/) for Android development
 - [Android Lollipop](https://www.android.com/versions/lollipop-5-0/) or better for Android device testing
 
+See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
+
 ## Stack
 - [React Native](https://facebook.github.io/react-native/) `0.24.1` for building native apps using react
-- [Redux](http://rackt.github.io/redux/index.html) `4.2.x` a predictable state container for Javascript apps
+- [Redux](http://rackt.github.io/redux/index.html) `3.5.x` a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript
 - [ExNavigator](https://github.com/exponentjs/ex-navigator) a route-centric navigation built on top of React Native's Navigator    
@@ -26,7 +28,7 @@ $ git clone https://github.com/LeoLeBras/react-native-redux-starter-kit.git myAw
 $ cd myAwesomeApp
 $ npm i                         # Install Node.js components listed in ./package.json
 ```
-And see [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
+
 
 ### How to use ?
 ```shell

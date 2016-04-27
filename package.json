@@ -1,5 +1,5 @@
 {
-  "name": "react-native-redux-starter-kit",
+  "name": "App",
   "version": "1.0.0-rc",
   "description": "Get started with React Native and Redux.",
   "repository": {
@@ -12,7 +12,7 @@
     "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit/issues"
   },
   "scripts": {
-    "start": "node_modules/react-native/packager/packager.sh",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "build": "react-native bundle",
     "test": "eslint src",
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
@@ -25,10 +25,11 @@
   "dependencies": {
     "@exponent/react-native-navigator": "^0.4.1",
     "immutable": "^3.7.5",
-    "react-native": "^0.19.0",
+    "react": "^0.14.7",
+    "react-native": "^0.24.1",
     "react-redux": "^4.4.0",
     "redux": "^3.3.0",
-    "redux-thunk": "^1.0.3"
+    "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.3.17",

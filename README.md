@@ -54,7 +54,7 @@ $ npm run reactotron
 
 ![](https://github.com/skellock/reactotron/blob/master/images/Reactotron.gif)
 
-[Reacotron docs](https://github.com/skellock/reactotron)
+See the [Reacotron docs](https://github.com/skellock/reactotron) for more features.
 
 ## Issues
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.

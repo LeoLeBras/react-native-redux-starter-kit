@@ -12,7 +12,7 @@
     "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit/issues"
   },
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "node_modules/react-native/packager/packager.sh",
     "build": "react-native bundle",
     "test": "eslint src",
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",

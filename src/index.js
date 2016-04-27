@@ -1,4 +1,4 @@
-import { AppRegistry } from 'react-native';
+import React, { AppRegistry } from 'react-native';
 import App from './scripts/containers/App';
 
-export default () => AppRegistry.registerComponent('App', () => App);
+AppRegistry.registerComponent('App', () => App);

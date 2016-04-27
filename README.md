@@ -51,6 +51,9 @@ Start your emulator or connect your device.
 ```shell
 $ npm run reactotron
 ```
+
+![](https://github.com/skellock/reactotron/blob/master/images/Reactotron.gif)
+
 [Reacotron docs](https://github.com/skellock/reactotron)
 
 ## Issues

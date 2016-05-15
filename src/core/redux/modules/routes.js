@@ -1,16 +1,16 @@
-const initialState = {
+import Immutable from 'immutable'
+
+const FOCUS = 'FOCUS'
+
+const initialState = Immutable.fromJS({
   scene: {},
-};
+})
 
-export default function reducer(state = initialState, action = {}) {
+export default function routes(state = initialState, action = {}) {
   switch (action.type) {
-    case 'focus':
-      return {
-        ...state,
-        scene: action.scene,
-      };
-
+    case FOCUS:
+      return state.setIn(['scene'], action.scene)
     default:
-      return state;
+      return state
   }
 }

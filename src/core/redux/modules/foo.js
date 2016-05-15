@@ -1,15 +1,15 @@
-import Immutable from 'immutable';
+import Immutable from 'immutable'
 
-export const BAR = 'BAR';
+export const BAR = 'BAR'
 
-const initialState = Immutable.fromJS({});
+const initialState = Immutable.fromJS({})
 
 export default function foo(state = initialState, action) {
   switch (action.type) {
-    default: return state;
+    default: return state
   }
 }
 
 export const bar = () => ({
   type: BAR,
-});
+})

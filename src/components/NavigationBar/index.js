@@ -1,4 +1,6 @@
-import React, { StyleSheet } from 'react-native'
+/* @flow */
+
+import { StyleSheet } from 'react-native'
 import { PRIMARY_COLOR, PRIMARY_COLOR_BLACK } from '@components/colors'
 
 export const styles = StyleSheet.create({

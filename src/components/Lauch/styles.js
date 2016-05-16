@@ -1,7 +1,7 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { DEFAULT_BACKGROUND_COLOR, PRIMARY_COLOR_BLACK } from '@components/colors'
+import { DEFAULT_BACKGROUND_COLOR, PRIMARY_COLOR_BLACK } from '@theme/colors'
 
 export default StyleSheet.create({
   container: {
@@ -14,10 +14,5 @@ export default StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: PRIMARY_COLOR_BLACK,
-    marginBottom: 10,
   },
 })

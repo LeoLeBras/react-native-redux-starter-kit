@@ -1,5 +1,5 @@
 {
-  "name": "App",
+  "name": "react-native-redux-starter-kit",
   "version": "1.0.0",
   "description": "Get started with React Native and Redux.",
   "repository": {
@@ -16,7 +16,8 @@
     "build-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --bundle-output iOS/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache",
     "build-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --bundle-output iOS/main.jsbundle --platform 'android' --assets-dest ./  --dev false --reset-cache",
     "reactotron": "node_modules/.bin/reactotron",
-    "android-setup-port": "adb reverse tcp:8081 tcp:8080"
+    "android-setup-port": "adb reverse tcp:8081 tcp:8080",
+    "flow:check": "node bin/flow-check"
   },
   "engines": {
     "node": ">=4",
@@ -27,7 +28,7 @@
     "immutable": "^3.8.1",
     "react": "^0.14.5",
     "react-native": "^0.25.1",
-    "react-native-router-flux": "^3.22.23",
+    "react-native-router-flux": "^2.3.1",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-thunk": "^2.0.1"

@@ -6,9 +6,7 @@ import createStore from '@store/create'
 
 const Kernel = () => (
   <Provider store={createStore()}>
-    <Router>
-      {routes}
-    </Router>
+    {routes}
   </Provider>
 )
 

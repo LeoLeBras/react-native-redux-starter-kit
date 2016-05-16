@@ -6,7 +6,9 @@ import { styles } from '@components/NavigationBar'
 import LauchContainer from '@containers/LauchContainer'
 
 const routes = (
-  <Route name="welcome" component={LauchContainer} title="Welcome" />
+  <Router navigationBarStyle={styles.container}>
+    <Route name="welcome" component={LauchContainer} title="Welcome" />
+  </Router>
 )
 
 export default routes

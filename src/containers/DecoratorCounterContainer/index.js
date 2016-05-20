@@ -8,22 +8,24 @@ import Container from '@components/Container'
 import Title from '@components/Title'
 import Counter from '@components/Counter'
 
-@connect(state => ({counter: state.counter}))
+@connect(state => ({counter: state.counter}), {increment, decrement})
 export default class CounterContainer extends Component {
 
   static propTypes = {
     counter: React.PropTypes.number.isRequired,
+    increment: React.PropTypes.func.isRequired,
+    decrement: React.PropTypes.func.isRequired,
   }
 
   render() {
-    const { counter, dispatch } = this.props
+    const { counter, decrement, increment } = this.props
     return (
       <Container>
-        <Title>Counter</Title>
+        <Title>Counter Decorator</Title>
         <Counter
           value={counter}
-          decrement={() => dispatch(decrement())}
-          increment={() => dispatch(increment())}
+          decrement={decrement}
+          increment={increment}
         />
       </Container>
     )

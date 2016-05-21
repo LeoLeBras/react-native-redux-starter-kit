@@ -6,7 +6,7 @@ import styles from './styles'
 
 type Props = {
   children: string,
-  onPress: Function
+  onPress: Function,
 }
 
 const Button = (props: Props) => {
@@ -16,6 +16,10 @@ const Button = (props: Props) => {
       <Text style={styles.text}>{children}</Text>
     </TouchableOpacity>
   )
+}
+
+Button.defaultProps = {
+  onPress: () => true,
 }
 
 export default Button

@@ -1,4 +1,5 @@
 /* @flow */
+
 import React from 'react'
 import { View, Text } from 'react-native'
 import Button from '@components/Button'
@@ -19,6 +20,10 @@ const Counter = (props: Props) => {
       <Button onPress={() => increment()}>+</Button>
     </View>
   )
+}
+
+Counter.defaultProps = {
+  value: 0,
 }
 
 export default Counter

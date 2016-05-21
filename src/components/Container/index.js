@@ -1,14 +1,14 @@
 /* @flow */
 
 import React, { Element } from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 import styles from './styles'
 
 type Props = {
-  children: Element
+  children: Element,
 }
 
-const Container = (props) => {
+const Container = (props: Props) => {
   const { children } = props
   return (
     <View style={styles.container}>{children}</View>

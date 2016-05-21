@@ -2,7 +2,7 @@
 
 import { StyleSheet } from 'react-native'
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
   text: {
     fontSize: 15,
     textAlign: 'center',
@@ -12,3 +12,5 @@ export default StyleSheet.create({
     textDecorationColor: 'rgb(0, 0, 0)',
   },
 })
+
+export default styles

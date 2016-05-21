@@ -1,9 +1,14 @@
+/* @flow */
+
 const INCREMENT = 'INCREMENT'
 const DECREMENT = 'DECREMENT'
 
-const initialState = 0
+type Action = Object<{
+  type: string
+}>
+type Counter = number
 
-export default function routes(state = initialState, action = {}) {
+export default function scenes(state: Counter = 0, action: Action): Counter {
   switch (action.type) {
     case DECREMENT:
       return state - 1
@@ -14,10 +19,10 @@ export default function routes(state = initialState, action = {}) {
   }
 }
 
-export const decrement = () => ({
+export const decrement = (): Action => ({
   type: DECREMENT,
 })
 
-export const increment = () => ({
+export const increment = (): Action => ({
   type: INCREMENT,
 })

@@ -14,7 +14,7 @@ const enhancer = compose(
   )
 )
 
-export default function configureStore(initialState) {
+export default function configureStore(initialState): Store {
   const store = createStore(
     combineReducers({ ...reducers }),
     initialState,

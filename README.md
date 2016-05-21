@@ -14,11 +14,12 @@ A starter boilerplate for a mobile app using React Native and Redux.
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 
 ## Stack
-- [React Native](https://facebook.github.io/react-native/) `0.25.1` for building native apps using react
+- [React Native](https://facebook.github.io/react-native/) `0.26.0` for building native apps using react
 - [Redux](http://rackt.github.io/redux/index.html) `3.5.x` a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) a router based on new React Native Navigation API
+- [Flow](http://flowtype.org/): adds static typing to JavaScript to improve developer productivity and code quality.
 
 ## Make the awesome
 Just clone the repo

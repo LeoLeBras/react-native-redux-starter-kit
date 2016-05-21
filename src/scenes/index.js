@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react'
+import React, { Element } from 'react'
 import { Router } from 'react-native-router-flux'
 import scenes from './app'
 
@@ -13,7 +13,7 @@ const getSceneStyle = () => ({
   shadowRadius: 3,
 })
 
-export default () => (
+export default (): Element => (
   <Router
     scenes={scenes}
     getSceneStyle={getSceneStyle}

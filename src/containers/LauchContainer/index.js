@@ -1,13 +1,12 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import { Actions } from 'react-native-router-flux'
 import Container from '@components/Container'
 import Title from '@components/Title'
 import Link from '@components/Link'
 
-class LauchContainer extends Component {
+class LauchContainer extends Component<void, void, void> {
   render() {
     return (
       <Container>
@@ -18,4 +17,4 @@ class LauchContainer extends Component {
   }
 }
 
-export default connect()(LauchContainer)
+export default LauchContainer

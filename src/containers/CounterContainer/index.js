@@ -1,14 +1,19 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { Text } from 'react-native'
 import { connect } from 'react-redux'
-import { decrement, increment } from '@redux/counter'
+import { decrement, increment } from '@store/modules/counter'
 import Container from '@components/Container'
 import Title from '@components/Title'
 import Counter from '@components/Counter'
 
-class CounterContainer extends Component {
+type Props = {
+  counter: number,
+  dispatch: (a: Function) => any,
+}
+
+class CounterContainer extends Component<void, Props, void> {
+  props: Props
   render() {
     const { counter, dispatch } = this.props
     return (
@@ -25,7 +30,7 @@ class CounterContainer extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  counter: state.counter
+  counter: state.counter,
 })
 
 export default connect(mapStateToProps)(CounterContainer)

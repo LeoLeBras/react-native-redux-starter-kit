@@ -19,7 +19,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) a router based on new React Native Navigation API
-- [Flow](http://flowtype.org/): adds static typing to JavaScript to improve developer productivity and code quality.
+- [Flow](http://flowtype.org/) adds static typing to JavaScript to improve developer productivity and code quality.
 
 ## Make the awesome
 Just clone the repo

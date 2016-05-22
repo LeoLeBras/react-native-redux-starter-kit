@@ -3,12 +3,10 @@
 const INCREMENT = 'INCREMENT'
 const DECREMENT = 'DECREMENT'
 
-type Action = Object<{
-  type: string
-}>
+type Action = Object<{ type: string }>
 type Counter = number
 
-export default function scenes(state: Counter = 0, action: Action): Counter {
+export default function counter(state: Counter = 0, action: Action): Counter {
   switch (action.type) {
     case DECREMENT:
       return state - 1

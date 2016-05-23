@@ -1,1 +1,2 @@
-export counter from './modules/counter'
+export mainCounter from './modules/mainCounter'
+export subCounter from './modules/subCounter'

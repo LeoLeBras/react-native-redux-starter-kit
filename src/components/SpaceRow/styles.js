@@ -1,13 +1,21 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { DEFAULT_BACKGROUND_COLOR } from '@theme/colors'
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
-    marginTop: 100,
     alignItems: 'center',
-    backgroundColor: DEFAULT_BACKGROUND_COLOR
+    flexDirection: 'row',
   },
+
+  value: {
+    width: 40,
+    textAlign: 'center',
+  },
+  
+  image: {
+    width: 50,
+    height: 50
+  }
+  
 })

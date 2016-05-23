@@ -3,30 +3,32 @@
 import React, { Component } from 'react'
 import { Text } from 'react-native'
 import { connect } from 'react-redux'
-import { decrement, increment, reset } from '@redux/counter'
+import { mdecrement, mincrement, mreset } from '@redux/mainCounter'
+import { sdecrement, sincrement, sreset } from '@redux/subCounter'
 import Container from '@components/Container'
 import Title from '@components/Title'
 import Counter from '@components/Counter'
+import SubCounter from '@components/SubCounter'
 import Button from '@components/Button'
 
 class CounterContainer extends Component {
   render() {
-    const { counter, dispatch } = this.props
+    const { mainCounter, subCounter, dispatch } = this.props
     return (
       <Container>
         <Title>Counter</Title>
         <Counter
-          value={counter}
-          decrement={() => dispatch(decrement())}
-          increment={() => dispatch(increment())}
-          reset={() => dispatch(reset())}
+          value={mainCounter}
+          decrement={() => dispatch(mdecrement())}
+          increment={() => dispatch(sincrement())}
+          reset={() => dispatch(mreset())}
         />
         
         <Counter
-          value={counter}
-          decrement={() => dispatch(decrement())}
-          increment={() => dispatch(increment())}
-          reset={() => dispatch(reset())}
+          value={subCounter}
+          decrement={() => dispatch(sdecrement())}
+          increment={() => dispatch(sincrement())}
+          reset={() => dispatch(sreset())}
         />
         
       </Container>
@@ -35,7 +37,8 @@ class CounterContainer extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  counter: state.counter.counter
+  mainCounter: state.mainCounter,
+  subCounter: state.subCounter
 })
 
 export default connect(mapStateToProps)(CounterContainer)

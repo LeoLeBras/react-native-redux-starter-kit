@@ -6,17 +6,16 @@ import { Actions } from 'react-native-router-flux'
 import Container from '@components/Container'
 import Title from '@components/Title'
 import Link from '@components/Link'
-import SpaceRow from '@components/SpaceRow'
+import Space from '@components/Space'
 
-class LauchContainer extends Component {
+class SpaceContainer extends Component {
   render() {
     return (
       <Container>
-        <SpaceRow id={123} title="Test Space 1" source={{uri: "https://gohugo.io/img/hugo-logo.png"}} />
-          <SpaceRow id={456} title="Test Space 2" source={{uri: "https://gohugo.io/img/hugo-logo.png"}} />
+        <Space title={this.props.title} source={this.props.source}/>
       </Container>
     )
   }
 }
 
-export default connect()(LauchContainer)
+export default connect()(SpaceContainer)

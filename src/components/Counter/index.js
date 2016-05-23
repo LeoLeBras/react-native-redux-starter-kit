@@ -11,12 +11,13 @@ type Props = {
 }
 
 const Counter = (props: Props) => {
-  const { value, decrement, increment } = props
+  const { value, decrement, increment, reset } = props
   return (
     <View style={styles.container}>
       <Button onPress={() => decrement()}>-</Button>
       <Text style={styles.value}>{value}</Text>
       <Button onPress={() => increment()}>+</Button>
+      <Button onPress={() => reset()}>Reset</Button>
     </View>
   )
 }

@@ -12,6 +12,7 @@ export default StyleSheet.create({
   },
   text: {
     fontSize: 15,
+    color: "green",
     textAlign: 'center',
     margin: 10,
   },

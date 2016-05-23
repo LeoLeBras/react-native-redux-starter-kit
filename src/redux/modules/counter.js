@@ -1,16 +1,20 @@
 const INCREMENT = 'INCREMENT'
 const DECREMENT = 'DECREMENT'
+const RESET = 'RESET'
 
-const initialState = 0
+const initialState = {}
 
 export default function routes(state = initialState, action = {}) {
+  var counter = state["counter"] || 0;
   switch (action.type) {
     case DECREMENT:
-      return state - 1
+      return {counter: counter - 1}
     case INCREMENT:
-      return state + 1
+      return {counter: counter + 1}
+    case RESET:
+      return {counter: 0}
     default:
-      return state
+      return {counter: counter}
   }
 }
 
@@ -21,3 +25,5 @@ export const decrement = () => ({
 export const increment = () => ({
   type: INCREMENT,
 })
+
+export const reset = () => ({type: RESET})

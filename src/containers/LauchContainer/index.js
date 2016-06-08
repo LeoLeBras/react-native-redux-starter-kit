@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, { Component } from 'react'
+import { Platform } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import Container from '@components/Container'
 import Title from '@components/Title'
@@ -10,8 +11,8 @@ class LauchContainer extends Component<void, void, void> {
   render() {
     return (
       <Container>
-        <Title>Hey you ! =)</Title>
-        <Link onPress={Actions.counter}>Go to counter</Link>
+        <Title>Hello there 😃 !</Title>
+        <Link onPress={Actions.counter}>Go to {Platform.OS} counter</Link>
       </Container>
     )
   }

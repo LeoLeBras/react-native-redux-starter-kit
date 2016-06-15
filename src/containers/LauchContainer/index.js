@@ -12,7 +12,7 @@ class LauchContainer extends Component<void, void, void> {
     return (
       <Container>
         <Title>Hello there 😃 !</Title>
-        <Link onPress={Actions.counter}>Go to {Platform.OS} counter</Link>
+        <Link onPress={Actions.counter}>Go to counter</Link>
       </Container>
     )
   }

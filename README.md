@@ -8,8 +8,10 @@ A starter boilerplate for a mobile app using React Native and Redux.
 - [Node](https://nodejs.org) `4.x` or newer
 - [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
 - [Xcode](https://developer.apple.com/xcode/) for iOS development
-- [Android SDK](https://developer.android.com/sdk/) for Android development
-- [Android Lollipop](https://www.android.com/versions/lollipop-5-0/) or better for Android device testing
+- [Android Studio](https://developer.android.com/studio/index.html) for Android development
+- [Android SDK](https://developer.android.com/sdk/) `23.0.2` or newer for Android development
+- [Genymotion](https://www.genymotion.com/) for Android emulation
+- [Android Lollipop](https://www.android.com/versions/lollipop-5-0/) or newer on your Android device to test properly
 
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 

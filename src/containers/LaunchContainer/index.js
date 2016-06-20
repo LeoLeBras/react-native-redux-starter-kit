@@ -7,7 +7,7 @@ import Container from '@components/Container'
 import Title from '@components/Title'
 import Link from '@components/Link'
 
-class LauchContainer extends Component<void, void, void> {
+class LaunchContainer extends Component<void, void, void> {
   render() {
     return (
       <Container>
@@ -18,4 +18,4 @@ class LauchContainer extends Component<void, void, void> {
   }
 }
 
-export default LauchContainer
+export default LaunchContainer

@@ -29,6 +29,7 @@
 - [Android SDK](https://developer.android.com/sdk/) `23.0.2` or newer for Android development
 - [Genymotion](https://www.genymotion.com/) `2.7.x` or newer for Android emulation
 - [Android](https://www.android.com/) `5.0` or newer on your Android device to test properly
+- [ESLint](http://eslint.org/) `3.2.2` or newer to lint your code on fly
 
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 
@@ -37,7 +38,6 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 - [Redux](http://redux.js.org/) `3.5.x` a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) `3.x.x` a router based on ExperimentalNavigation API
-- [ESLint](http://eslint.org/) `3.2.2` a pluggable linting utility for JavaScript
 - [Flow](http://flowtype.org/) `0.30` a static type checker for JavaScript
 
 ## Make the magic happen
@@ -151,7 +151,7 @@ We may change this router for something more stable and customizable in the futu
 
 #### Middlewares
 
-Sometimes you need to write some promises in your app, and guess what:  `react-native-redux-starter-kit` support them now!
+Sometimes you need to write some promises in your app with Redux, and guess what:  `react-native-redux-starter-kit` support them now!
 Here is an example of a pretty simple promise:
 
 ```js

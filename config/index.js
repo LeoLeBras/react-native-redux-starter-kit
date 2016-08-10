@@ -1,1 +1,3 @@
-export const API = 'https://api.github.com'
+/* @flow */
+
+// To edit ...

@@ -1,3 +1,5 @@
+/* @flow */
+
 import cp from 'child_process'
 import flowBin from 'flow-bin'
 

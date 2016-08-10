@@ -1,6 +1,9 @@
+/* @flow */
+
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import reduxThunkMiddleware from 'redux-thunk'
 import Reactotron from 'reactotron'
+import promiseMiddleware from '@store/middlewares/promiseMiddleware'
 import * as reducers from './reducers'
 
 Reactotron.connect({
@@ -10,16 +13,19 @@ Reactotron.connect({
 const enhancer = compose(
   applyMiddleware(
     reduxThunkMiddleware,
-    Reactotron.reduxMiddleware
-  )
+    promiseMiddleware,
+    Reactotron.reduxMiddleware,
+  ),
 )
 
-export default function configureStore(initialState): Store {
+export default function configureStore(initialState) {
   const store = createStore(
     combineReducers({ ...reducers }),
     initialState,
     enhancer
   )
-  Reactotron.addReduxStore(store)
+  if (__DEV__) {
+    Reactotron.addReduxStore(store)
+  }
   return store
 }

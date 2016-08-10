@@ -12,16 +12,16 @@ A starter boilerplate for a mobile app using React Native and Redux.
 - [Android SDK](https://developer.android.com/sdk/) `23.0.2` or newer for Android development
 - [Genymotion](https://www.genymotion.com/) for Android emulation
 - [Android Lollipop](https://www.android.com/versions/lollipop-5-0/) or newer on your Android device to test properly
+- [Flow](http://flowtype.org/) adds static typing to JavaScript to improve developer productivity and code quality.
 
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 
 ## Stack
-- [React Native](https://facebook.github.io/react-native/) `0.26.0` for building native apps using react
+- [React Native](https://facebook.github.io/react-native/) `0.30.0` for building native apps using react
 - [Redux](http://rackt.github.io/redux/index.html) `3.5.x` a predictable state container for Javascript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [Immutable](https://facebook.github.io/immutable-js/) Immutable persistent data collections for Javascript
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) a router based on new React Native Navigation API
-- [Flow](http://flowtype.org/) adds static typing to JavaScript to improve developer productivity and code quality.
 
 ## Make the awesome
 Just clone the repo
@@ -42,10 +42,10 @@ This will start a lightweight development server.
 Open `App.xcodeproj` in Xcode, build and run the project.
 
 ###### Android:
-```shell
-$ npm run android-setup-port    # adb reverse tcp:8081 tcp:8080
-```
 Start your emulator or connect your device.
+```shell
+$ react-native run-android
+```
 
 ## Debugging
 [Access the in-app developer menu](https://facebook.github.io/react-native/docs/debugging.html) and select ``Debug in Chrome``.

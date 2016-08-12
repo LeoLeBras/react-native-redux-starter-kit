@@ -186,6 +186,20 @@ It's a little something we can use thanks to React Native, to improve the code r
 ```
 
 to use aliases in any folder 🤗🎉.
+#### Environment
+Set up your environment variables inside the env.js file (located in the config folder). Go ahead and add more values to each of the objects! 
+```js
+production:  {BASE_URL: 'https://host.com', API_KEY: ''},
+staging:     {BASE_URL: 'https://staging.host.com/', API_KEY: ''},
+development: {BASE_URL: 'http://localhost:8080/', API_KEY: '<api key here>', OTHER_VARS_HERE: ""},
+```
+
+To change to a different environment, simply change the value of the env const at the top of the file. 
+
+```js
+const env = "development";
+```
+#TODO would like to use a package.json environment variable to set the env
 
 #### Flow
 

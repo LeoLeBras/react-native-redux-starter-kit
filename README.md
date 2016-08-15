@@ -1,6 +1,7 @@
 # react-native-redux-starter-kit
 [![Dependency Status](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit)
 [![devDependency Status](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit/dev-status.svg?style=flat)](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit#info=devDependencies)
+[![Build Status](https://travis-ci.org/LeoLeBras/react-native-redux-starter-kit.svg?branch=master)](https://travis-ci.org/LeoLeBras/react-native-redux-starter-kit)
 
 `react-native-redux-starter-kit` is a starter boilerplate for mobile apps using React Native, Redux for data management, and a bunch of other cool tools. This starter is compatible with both iOS and Android 👌
 

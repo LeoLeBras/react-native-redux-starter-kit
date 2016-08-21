@@ -1,3 +1,7 @@
+>## A Big Update Is Coming
+
+> A new version is [on the horizon](https://github.com/LeoLeBras/react-native-redux-starter-kit/tree/next), and you can try it today !
+
 # react-native-redux-starter-kit
 [![Dependency Status](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit.svg?style=flat)](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit)
 [![devDependency Status](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit/dev-status.svg?style=flat)](https://david-dm.org/LeoLeBras/react-native-redux-starter-kit#info=devDependencies)

@@ -1,9 +1,8 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { decrement, increment } from '@store/modules/counter'
 import Counter from '@Counter/components/Counter'
+import connect from './connect'
 
 type Props = {
   counter: number,
@@ -27,10 +26,4 @@ class CounterContainer extends Component {
 
 }
 
-const mapStateToProps = (state) => ({
-  counter: state.counter,
-})
-
-const mapActionsToProps = { increment, decrement }
-
-export default connect(mapStateToProps, mapActionsToProps)(CounterContainer)
+export default connect(CounterContainer)

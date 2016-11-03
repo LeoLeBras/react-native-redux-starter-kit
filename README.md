@@ -15,7 +15,7 @@
 1. [Development](#development)
   1. [Navigation](#navigation)
   1. [Middlewares](#middlewares)
-  1. [Alias](#alias)
+  1. [Aliases](#aliases)
   1. [Flow](#flow)
   1. [.babelrc](#babelrc)
   1. [react-native link](#react-native-link)
@@ -35,8 +35,8 @@
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 
 ## Stack
-- [React Native](https://facebook.github.io/react-native/) `0.36.1` for building native apps using react
-- [Redux](http://redux.js.org/) `3.5.x` a predictable state container for Javascript apps
+- [React Native](https://facebook.github.io/react-native/) `0.36.1` for building native apps using React
+- [Redux](http://redux.js.org/) `3.5.x` a predictable state container for JavaScript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) `3.x.x` a router based on ExperimentalNavigation API
 - [Flow](http://flowtype.org/) `0.34` a static type checker for JavaScript
@@ -51,16 +51,16 @@ $ yarn              # Install Node.js components listed in your package.json wit
 
 ## Scripts
 
-99% of the time you'll just have to run `npm start` to launch the server. However, here are all the scripts that could get you out of an awkward situation:
+99% of the time you'll just have to run `yarn start` (or `npm start` if you like the old school way 😋) to launch the server. However, here are all the scripts that could get you out of an awkward situation:
 
 |`npm run <script>`|Description|
 |------------------|-----------|
 |`start`|Serves your app at `localhost:8081` or on the IP address you'll set up. Then just start your emulator or switch to your device. |
 |`clean`|Clears your cache and removes all the temporary files. |
-|`fresh-install`| Same idea as `npm clean` but this one if when you're in some serious troubles. It will unlink and uninstall everything, clear your cache, and then install all your node modules and link all your assets. ⚠️ Use with precaution… |
+|`fresh-install`| Same idea as `yarn clean` but this one if when you're in some serious troubles. It will unlink and uninstall everything, clear your cache, and then install all your node modules and link all your assets. ⚠️ Use with precaution… |
 |`build-ios`|Builds your app for a production release on the AppStore. |
 |`build-android`|Builds your app for a production release on the Google Play Store.|
-|`reactotron`|Launch [Reactotron](https://github.com/skellock/reactotron) (only in `_DEV_` mode).|
+|`reactotron`|Launch [Reactotron](https://github.com/skellock/reactotron) (only in `_DEV_` mode). ⚠️ Remove/disable it when you'll want to generate your .apk/.ipa!|
 
 ## Application structure
 
@@ -100,7 +100,7 @@ src
 ## Development
 
 #### Navigation
-We're actually using [`react-native-router-flux`](https://github.com/aksonov/react-native-router-flux) latest implementation `(3.x)`, and it seems to be pretty promising.
+We're actually using [`react-native-router-flux`](https://github.com/aksonov/react-native-router-flux) latest implementation `(3.x)`, and it's doing great so far.
 
 The router is set up in `src/core/scenes.js` so this is where you'll define the different routes of your app. For instance:
 
@@ -164,8 +164,8 @@ export function getFoo() {
 }
 ```
 
-If you need any other middleware right out the box: make us know!
-#### Alias
+If you need any other middleware right out the box: let us know!
+#### Aliases
 
 You may have noticed something like this among my several imports:
 
@@ -199,13 +199,15 @@ Counter = (props: Props): React$Element<any> => {
 
 means that your variable `props` should match the type `Props` you defined.
 
-`React$Element<any>` is a rule defined by Flow itself to represent a React element. This should help you to drastically reduce the amount of non-wanted bugs.
+`React$Element<any>` is a type defined by Flow itself to represent a React element. This should help you to drastically reduce the amount of non-wanted bugs.
+
+We also implemented libdefs from [`flow-typed`](https://flowtype.org/docs/third-party.html) to extend your code coverage.
 
 #### .babelrc
 
 > Are you generally just confused and frustrating by how hard it is to use the latest and greatest Babel features on React Native? This preset is for you!
 
-[`babel-preset-react-native-stage-0`](https://github.com/skevy/babel-preset-react-native-stage-0) allows you to use Stage 0 preset from Babel and then enjoy all the good features you like. If you need decorators for instance, just add `decorator-support` in your `.babelrc` file:
+[`babel-preset-react-native-stage-0`](https://github.com/skevy/babel-preset-react-native-stage-0) allows you to use Stage-0 preset from Babel and then enjoy all the good features you like. If you need decorators for instance, just add `decorator-support` in your `.babelrc` file:
 
 ```js
 {
@@ -224,6 +226,7 @@ One of the coolest feature is the ability to install your fonts, just by adding 
 ## Missing doc?
 
 Having a trouble? Facing some issues? Need more informations? Just post an issue or send a PR, we'll be happy to help you.
+Let us know if there is something more you'd like to see in the documentation!
 
 ## Contributors
 

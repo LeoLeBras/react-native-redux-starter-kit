@@ -51,15 +51,14 @@ $ yarn              # Install Node.js components listed in your package.json wit
 
 ## Scripts
 
-99% of the time you'll just have to run `yarn start` (or `npm start` if you like the old school way 😋) to launch the server. However, here are all the scripts that could get you out of an awkward situation:
+99% of the time you'll just have to run `yarn start` (or `npm start` if you like the old school way 😋) to launch the server. However, here are all the scripts that could be useful during your development:
 
-|`npm run <script>`|Description|
+|`yarn <script>`|Description|
 |------------------|-----------|
-|`start`|Serves your app at `localhost:8081` or on the IP address you'll set up. Then just start your emulator or switch to your device. |
-|`clean`|Clears your cache and removes all the temporary files. |
-|`fresh-install`| Same idea as `yarn clean` but this one if when you're in some serious troubles. It will unlink and uninstall everything, clear your cache, and then install all your node modules and link all your assets. ⚠️ Use with precaution… |
-|`build-ios`|Builds your app for a production release on the AppStore. |
-|`build-android`|Builds your app for a production release on the Google Play Store.|
+|`start`|Serve your app at `localhost:8081` or on the IP address you'll set up. Then just start your emulator or switch to your device. |
+|`clean`|Clear your cache and removes all the temporary files. |
+|`build-ios`|Build your app for a production release on the AppStore. |
+|`build-android`|Build your app for a production release on the Google Play Store.|
 |`reactotron`|Launch [Reactotron](https://github.com/skellock/reactotron) (only in `_DEV_` mode). ⚠️ Remove/disable it when you'll want to generate your .apk/.ipa!|
 
 ## Application structure

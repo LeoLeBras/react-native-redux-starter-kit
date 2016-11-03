@@ -25,7 +25,7 @@
 ## Requirements
 - [Node](https://nodejs.org) `5.1.x` or newer
 - [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
-- [Xcode](https://developer.apple.com/xcode/) `7.3.x` or newer for iOS development
+- [Xcode](https://developer.apple.com/xcode/) `8.0` or newer for iOS development
 - [Android Studio](https://developer.android.com/studio/index.html) `2.x` or newer for Android development
 - [Android SDK](https://developer.android.com/sdk/) `23.0.1` or newer for Android development
 - [Genymotion](https://www.genymotion.com/) `2.7.x` or newer for Android emulation
@@ -46,7 +46,7 @@ Just clone the repo and start :
 ```shell
 $ git clone https://github.com/LeoLeBras/react-native-redux-starter-kit.git myAwesomeApp
 $ cd myAwesomeApp
-$ npm i              # Install Node.js components listed in your package.json
+$ yarn              # Install Node.js components listed in your package.json with Yarn 😺
 ```
 
 ## Scripts

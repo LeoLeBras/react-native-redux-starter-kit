@@ -11,22 +11,25 @@
   ],
   "env": {
     "browser": true,
-    "node": true,
-    "mocha": true
+    "mocha": true,
+    "node": true
   },
   "globals": {
-    "React$Element": true,
-    "__DEV__": true
+    "__DEV__": true,
+    "React$Element": true
   },
   "rules": {
-    "semi": [2, "never"],
-    "no-floating-decimal": 0,
-    "jsx-boolean-value": 0,
-    "import/no-unresolved": 0,
-    "react/sort-comp": 0,
     "arrow-body-style": 0,
+    "arrow-parens": [2, "always"],
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "jsx-boolean-value": 0,
+    "no-floating-decimal": 0,
     "radix": ["error", "as-needed"],
     "react/jsx-filename-extension": 0,
-    "import/no-extraneous-dependencies": 0
+    "react/sort-comp": 0,
+    "semi": [2, "never"]
   }
 }

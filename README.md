@@ -229,4 +229,4 @@ Let us know if there is something more you'd like to see in the documentation!
 
 ## Contributors
 
-This project is maintained by [Léo Le Bras](https://twitter.com/Leo_LeBras) and [Charles Mangwa](https://twitter.com/Charles_Mangwa), come say hi to us on Twitter whenever you want! 😊
+This project is maintained by [Léo Le Bras](https://twitter.com/Leo_LeBras) and [Charles Mangwa](https://twitter.com/Charles_Mangwa), come say hi on Twitter whenever you want 😊!

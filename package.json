@@ -1,12 +1,13 @@
 {
   "name": "react-native-redux-starter-kit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Get started with React Native and Redux.",
   "repository": {
     "type": "git",
     "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit"
   },
   "author": "Léo LE BRAS <leo.lebrasf@gmail.com> (http://github.com/LeoLeBras)",
+  "contributors": "Charles MANGWA <charles.mangwa@gmail.com> (http://github.com/CharlesMangwa)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit/issues"
@@ -27,7 +28,7 @@
     "flow-bin": "^0.34.0",
     "immutable": "^3.8.1",
     "react": "15.3.2",
-    "react-native": "^0.36.1",
+    "react-native": "^0.37.0",
     "react-native-router-flux": "^3.26.0",
     "react-redux": "^4.4.5",
     "recompose": "^0.20.2",
@@ -38,10 +39,10 @@
     "babel-eslint": "^7.1.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "eslint": "^3.9.1",
-    "eslint-config-airbnb": "^12.0.0",
+    "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^2.1.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
     "eslint-plugin-react": "^6.5.0",
     "reactotron": "^0.9.0"
   }

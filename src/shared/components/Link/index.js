@@ -6,10 +6,10 @@ import styles from './styles'
 
 type Props = {
   children?: string,
-  onPress: Function
+  onPress: Function,
 }
 
-const Link = (props: Props) => {
+const Link = (props: Props): React$Element<any> => {
   const { onPress } = props
   const children = props.children || ''
   return (

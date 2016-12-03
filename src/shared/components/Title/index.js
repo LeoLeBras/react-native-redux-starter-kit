@@ -11,7 +11,10 @@ type Props = {
 const Title = (props: Props): React$Element<any> => {
   const children = props.children || ''
   return (
-    <Text style={styles.main}>
+    <Text
+      selectable={true}
+      style={styles.main}
+    >
       {children}
     </Text>
   )

@@ -26,20 +26,20 @@
 - [Node](https://nodejs.org) `5.1.x` or newer
 - [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
 - [Xcode](https://developer.apple.com/xcode/) `8.0` or newer for iOS development
-- [Android Studio](https://developer.android.com/studio/index.html) `2.x` or newer for Android development
+- [Android Studio](https://developer.android.com/studio/index.html) `2.2` or newer for Android development
 - [Android SDK](https://developer.android.com/sdk/) `23.0.1` or newer for Android development
 - [Genymotion](https://www.genymotion.com/) `2.7.x` or newer for Android emulation
 - [Android](https://www.android.com/) `5.0` or newer on your Android device to test properly
-- [ESLint](http://eslint.org/) `3.9.1` or newer to lint your code on fly
+- [ESLint](http://eslint.org/) `3.11.1` or newer to lint your code on fly
 
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 
 ## Stack
-- [React Native](https://facebook.github.io/react-native/) `0.36.1` for building native apps using React
-- [Redux](http://redux.js.org/) `3.5.x` a predictable state container for JavaScript apps
+- [React Native](https://facebook.github.io/react-native/) `0.39.0` for building native apps using React
+- [Redux](http://redux.js.org/) `4.4.x` a predictable state container for JavaScript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) `3.x.x` a router based on ExperimentalNavigation API
-- [Flow](http://flowtype.org/) `0.34` a static type checker for JavaScript
+- [Flow](http://flowtype.org/) `0.36` a static type checker for JavaScript
 
 ## Make the magic happen
 Just clone the repo and start :

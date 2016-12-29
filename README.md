@@ -46,7 +46,8 @@ Just clone the repo and start :
 ```shell
 $ git clone https://github.com/LeoLeBras/react-native-redux-starter-kit.git myAwesomeApp
 $ cd myAwesomeApp
-$ yarn              # Install Node.js components listed in your package.json with Yarn 😺
+$ git checkout next     # Switching to the this current branch until it will be ready for merging
+$ yarn                  # Install Node.js components listed in your package.json with Yarn 😺
 ```
 
 ## Scripts

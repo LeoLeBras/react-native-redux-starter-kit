@@ -59,9 +59,9 @@ Start your emulator or connect your device.
 $ npm run reactotron
 ```
 
-![](https://github.com/skellock/reactotron/blob/master/images/Reactotron.gif)
+![](https://github.com/infinitered/reactotron/blob/master/docs/images/readme/Reactotron-64.png)
 
-See the [Reacotron docs](https://github.com/skellock/reactotron) for more features.
+See the [Reactotron docs](https://github.com/skellock/reactotron) for more features.
 
 ## Create a release build
 * Navigate to Product > Scheme > Edit Scheme... in Xcode and change Build Configuration to *Release*.

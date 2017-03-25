@@ -7,23 +7,24 @@ export const REPOSITORIES_FETCH_REQUESTED = 'REPOSITORIES_FETCH_REQUESTED'
 export const REPOSITORIES_FETCH_SUCCEEDED = 'REPOSITORIES_FETCH_SUCCEEDED'
 export const REPOSITORIES_FETCH_FAILED = 'REPOSITORIES_FETCH_FAILED'
 
-type Repositories = Object<{
+type Repositories = {
   [key: number]: {
-    name: string
-  }
-}>
-type Action = Object<{
+    name: string,
+  },
+}
+
+type Action = {
   types: Array<string>,
-  promise: Promise
-}>
+  promise: Promise<any>,
+}
 
 export default function repositories(
   state: Repositories = Immutable.fromJS({}),
-  action: Action
+  action: Action,
 ): Repositories {
-  switch (action.type) {
+  switch (action.types) {
     default:
-      return 2
+      return {}
   }
 }
 

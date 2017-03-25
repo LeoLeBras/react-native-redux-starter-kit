@@ -1,3 +1,3 @@
 /* @flow */
 
-export LaunchScene from './LaunchScene'
+export { default as LaunchScene } from './LaunchScene'

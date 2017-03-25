@@ -1,3 +1,3 @@
 /* @flow */
 
-export CounterScene from './CounterScene'
+export { default as CounterScene } from './CounterScene'

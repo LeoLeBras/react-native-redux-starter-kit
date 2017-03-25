@@ -10,9 +10,9 @@ const mapStateToProps = (state) => ({
 
 const mapActionsToProps = { increment, decrement }
 
-export default (container) => compose(
+export default (container: ReactClass<any>): ReactClass<any> => compose(
   connect(
     mapStateToProps,
     mapActionsToProps,
-  )
+  ),
 )(container)

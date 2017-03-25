@@ -18,11 +18,11 @@ const enhancer = compose(
   ),
 )
 
-export default function configureStore(initialState) {
+export default function configureStore(initialState?: Object) {
   const store = createStore(
     combineReducers({ ...reducers }),
     initialState,
-    enhancer
+    enhancer,
   )
   if (__DEV__) {
     Reactotron.addReduxStore(store)

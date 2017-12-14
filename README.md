@@ -10,7 +10,7 @@
 1. [Requirements](#requirements)
 1. [Stack](#stack)
 1. [Make the magic happen](#make-the-magic-happen)
-1. [Scripts](#Scripts)
+1. [Scripts](#scripts)
 1. [Application structure](#application-structure)
 1. [Development](#development)
   1. [Navigation](#navigation)
